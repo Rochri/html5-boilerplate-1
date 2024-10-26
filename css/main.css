@@ -10,68 +10,11 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-
-
- /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/* General Styles */
-html {
-  color: #222;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
- 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-}
-
- 
-ul, 
-ol {
-  list-style-type: none;
-}
- 
-a {
-  color: #e2e3ed;
-  text-decoration: none;
-}
- 
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-}
- 
-h3, 
-h4 {
-  font-family: 'Poppins', sans-serif;
-  margin: 20px 0;
-  font-size: 1.125em;
-}
- 
-p {
-  font-size: .875em;
-  line-height: 1.285;
-}
- 
-img {
- 
-}
- 
-figure {
- 
-}
- 
-address {
-  font-style: normal;
-}
-
-   .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
+   
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
   }
 /*
  * Remove text-shadow in selection highlight:
@@ -83,7 +26,7 @@ address {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+ ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
@@ -149,7 +92,71 @@ textarea {
     color: #000;
     padding: 0.2em 0;
   }
-   
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* General Styles */
+
+html {
+  font-size: 1rem;
+}
+ 
+body {
+  color: #e2e3ed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ 
+ul, 
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+  margin: 20px 0;
+}
+ 
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+  font-style: normal;
+}
+
+   .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
 
   
   
@@ -159,6 +166,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 15px 0;
+    background-color: #202322;
 }
 
 header.content-wrapper {
@@ -173,10 +181,14 @@ header.content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 
@@ -186,11 +198,16 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 footer {
   display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: #202322;
 }
 
 footer p {
@@ -199,7 +216,6 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
 }
 
 footer .contact {
@@ -232,13 +248,25 @@ footer .copyright {
   justify-content: center;
 }
 
+.hero-area h1 {
+font-size: 2.25em;
+font-weight: 500;
+Line-height: 1.2;
+font-family: 'Poppins', helvetica, arial, sans-serif;
+
+}
+
 /* Aside */
 
 aside {
   display: flex;
   justify-content: center; 
+  background-color: #527158;
 }
 
+aside .form {
+  margin-top: 30px;
+}
 
 /* Features */
 
@@ -266,6 +294,7 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
@@ -273,10 +302,12 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1; 
 }
 
 .reviews h3 {
@@ -291,12 +322,16 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
+
 
 .contact-content p {
   margin: 0;
@@ -309,6 +344,7 @@ aside {
   .faq {
     display: flex;
     justify-content: center;
+    background-color: #527128;
   }
 
   .faq .content-wrapper {
@@ -321,10 +357,15 @@ aside {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 
@@ -416,7 +457,37 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 768px) {
+   
+   
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+
+
+/* ===========================================================================================
+   Media Queries
+============================================================================== */
+   
+@media only screen and (min-width: 768px) {
     /*Tablet styles here*/
 
     /* General styles */
@@ -541,6 +612,8 @@ footer .copyright {
 .faq h2 {
     width: 100%;
 }
+}
+
 
  @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
@@ -599,14 +672,14 @@ footer .copyright {
   ========================================================================== */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+  .faq h4, .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 
 }
-
-
-
-
-
 
 
 
