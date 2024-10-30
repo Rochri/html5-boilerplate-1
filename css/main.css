@@ -667,6 +667,9 @@ footer .copyright {
       width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 56.25%;
+  }
   .contact-section .content-wrapper h2 {
       width: 80%;
   }
@@ -779,6 +782,11 @@ footer .copyright {
 /* ==========================================================================
   About Page
   ========================================================================== */
+
+  .map figure {
+    padding-bottom: 45.8%;
+  }
+
 
   .mission h2,
   .contact-section .content-wrapper h2 {
