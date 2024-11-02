@@ -385,19 +385,15 @@ input[type=button] {
   left: 0; 
 }
 
-
 .contact-section {
   display: flex;
   justify-content: center;
   background-color: #2a423a;
 }
 
-
 .contact-content p {
   margin: 0;
 }
-
-
 
 
 /* =============================================================================
@@ -407,7 +403,7 @@ input[type=button] {
   .faq {
     display: flex;
     justify-content: center;
-    background-color: #527128;
+    background-color: #527158;
   }
 
   .faq .content-wrapper {
