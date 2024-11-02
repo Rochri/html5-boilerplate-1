@@ -238,6 +238,12 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .social-icons i {
+  color: #527158;
+  font-size: 1.75em;
+  border-radius: 0%;
+}
+
 footer .copyright {
   margin: 20px 0;
 }
