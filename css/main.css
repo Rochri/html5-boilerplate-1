@@ -240,7 +240,7 @@ footer .social-icons p {
 
 footer .social-icons i {
   color: #527158;
-  font-size: 1.75em;
+  font-size: 1.5em;
   border-radius: 0%;
 }
 
@@ -436,8 +436,7 @@ input[type=button] {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
+.hidden {
   display: none !important;
 }
 
@@ -506,15 +505,8 @@ input[type=button] {
   display: table;
 }
 
-.clearfix::after {
+.clearfix:after {
   clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
    
    
@@ -526,11 +518,11 @@ input[type=button] {
    Media Queries
 ============================================================================== */
    
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
     /*Tablet styles here*/
 
     /* General styles */
-    .content-wrapper {
+ .content-wrapper {
       max-width: 640px;
       margin: 100px 0;
     }
@@ -665,7 +657,7 @@ footer .copyright {
 /* ==========================================================================
      About Page
      ========================================================================== */
-     .mission-content {
+  .mission-content {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -698,7 +690,7 @@ footer .copyright {
    FAQ Page
    ========================================================================== */
 
-   .faq .content-wrapper {
+.faq .content-wrapper {
     justify-content: space-between;
 }
 
