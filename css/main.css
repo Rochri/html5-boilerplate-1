@@ -178,7 +178,7 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 60%;
+  width: 40%;
 }
 
 .header-divider {
@@ -203,7 +203,7 @@ header nav ul {
 }
 
 header nav ul li {
-  font-size: 1.125em;
+  font-size: 1em;
 }
 
 footer {
@@ -548,7 +548,7 @@ input[type=button] {
     }
 
     header figure {
-      width: 30%;
+      width: 20%;
     }
 
     header nav {
@@ -701,6 +701,12 @@ footer .copyright {
 .faq h2 {
     width: 100%;
 }
+
+.faq h4,
+.faq p {
+  font-size: .875em;
+  line-height: 1.125;
+}
 }
 
 
@@ -808,7 +814,8 @@ footer .copyright {
     width: 100%;
     font-size: 3em;
   }
-  .faq h4, .faq p {
+  .faq h4, 
+  .faq p {
     font-size: 1.125em;
     line-height: 1;
   }
