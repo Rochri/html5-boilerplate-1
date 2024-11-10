@@ -107,6 +107,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  background-color: #202322;
 }
 
  
@@ -126,6 +127,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
  
 h3, 
@@ -153,10 +155,10 @@ address {
   font-style: normal;
 }
 
-   .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+ }
 
   
   
@@ -190,7 +192,7 @@ header figure {
 
 header nav {
   width: 60%;
-  font-size: 1.125em;
+  font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -208,10 +210,10 @@ header nav ul li {
 
 footer {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #202322;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #202322;
 }
 
 footer p {
@@ -236,12 +238,14 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
-footer .social-icons i {
-  color: #527158;
-  font-size: 1.5em;
-  border-radius: 0%;
+footer .social-icons p i {
+  font-size: 1.3125em;  
 }
 
 footer .copyright {
@@ -507,11 +511,8 @@ input[type=button] {
 
 .clearfix:after {
   clear: both;
-
+}
    
-   
- 
-  
 
 
 /* ===========================================================================================
